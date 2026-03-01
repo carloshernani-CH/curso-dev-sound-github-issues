@@ -1,4 +1,4 @@
-# GitHub Issue Sound
+# GitHub Curso.dev Issue Sound
 
 Extensão para Chrome que toca um som toda vez que você fechar uma issue no GitHub.
 
