@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Issue Sound",
+  "description": "Toca um som toda vez que você fechar uma issue no GitHub",
+  "version": "1.0.0",
+  "permissions": [],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["drumroll.mp3", "success.mp3", "icon16.png", "icon48.png", "icon128.png"],
+      "matches": ["https://github.com/*"]
+    }
+  ]
+}
